@@ -13,7 +13,7 @@ This project describes how to create a simple calendar application that allows t
 * A save button
 
 * Clicking on the save button will store the time and user input in localStorage.
-* Near the top of the calendar, the application displays the current day. Additionally, each hour is color coded to reflect whether the time slot is in the past, the present, or the future. This will change depending on the time of day.
+* Near the top of the calendar, the application displays the current day. Additionally, each hour input field is color coded to reflect whether the time slot is in the past, the present, or the future. This will change depending on the time of day.
 ## Installation
 In order to install this project, follow the instructions below.
 * Prerequisites
@@ -31,10 +31,9 @@ SSH keys
 * There are three main files index.html, contact.html and portfolio.html and assets folder which contains css folder with style.css and reset.css files and an images folder with all the images used in the project
 * The homepage of this project is called index.html which has the code for the landing page for the basic portfolio website, which contains the information about the developer.
 
-## Screenshots of the code-quiz web application
-* Here is a screenshot of the landing page of the Day-Planner application
-![alt landingPage](assets/images/landingPage.png)
-* Here is a screenshot of the application when a future event is created
-![alt viewFutureEvent](assets/images/viewFutureEvent.png)
+## Screenshots of the Day Planner web application
+* Here is a screenshot of the landing page of the Day-Planner application with events color coded to respresent past, present and future events
+![alt landingPage](assets/images/dayPlanner.png)
+
 
 

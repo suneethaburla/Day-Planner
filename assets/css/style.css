@@ -39,5 +39,13 @@
   .present {
     background-color: red;
   }
+  .time-block {
+    height: 60px;
+  }
+  .hour {
+    background-color:lightskyblue;
+    border-top: 1px solid white;
+    color: black;
+  }
   
   
