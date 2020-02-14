@@ -2,110 +2,95 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="https://kit.fontawesome.com/09028215b7.js" crossorigin="anonymous"></script>
-  <title>Day-Planner!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/09028215b7.js" crossorigin="anonymous"></script>
+    <title>Day-Planner!</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Work Day Scheduler</h1>
-    <h2>A sample calendar app for scheduling your work day</h2>
-    <h2 id="date"></h2>
-  </div>
-  <div class="container" id="scheduler">
+    <div class="container">
+        <h1>Work Day Scheduler</h1>
+        <h2>A sample calendar app for scheduling your work day</h2>
+        <h2 id="date"></h2>
+    </div>
+    <div class="container" id="scheduler">
 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">9 AM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2 "><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">10 AM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">11 AM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">12 PM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">1 PM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">1 PM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">2 PM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">3 PM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">4 PM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    <div class="input-group">
-      <button type="button" class="btn float-left border custom timeblock"id="button-addon2">5 PM</button>
-      <input type="text" class="form-control bg-success timeblock">
-      <div class="input-group-append">
-        <button class="btn border rounded-0 bg-info timeblock" type="button" id="button-addon2"><i class="fas fa-save"></i></button>
-      </div>
-    </div> 
-    
+        <div class="row time-block" id="9">
+            <div class="col-1 hour" >9 AM</div>
+            <input type="text" id="eventDetails-9" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button"></button>
+     
+        </div>
 
-  </div>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-  <script src="./assets/js/app.js"></script>
+        <div class="row time-block" id="10">
+            <div class="col-1 hour">10 AM</div>
+            <input type="text" id="eventDetails-10" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button"></button>
+          
+        </div>
+        <div class="row time-block" id="11">
+            <div class="col-1 hour">11 AM</div>
+            <input type="text" id="eventDetails-11" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button" ></button>
+          
+        </div>
+        <div class="row time-block" id="12">
+            <div class="col-1 hour">12 PM</div>
+            <input type="text" id="eventDetails-12" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button" ></button>
+           
+        </div>
+        <div class="row time-block" id="13">
+            <div class="col-1 hour">1 PM</div>
+            <input type="text" id="eventDetails-13" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button" ></button>
+           
+        </div>
+        <div class="row time-block" id="14">
+            <div class="col-1 hour">2 PM</div>
+            <input type="text" id="eventDetails-14" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button" ></button>
+          
+        </div>
+        <div class="row time-block" id="15">
+            <div class="col-1 hour">3 PM</div>
+            <input type="text" id="eventDetails-15" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button" ></button>
+            
+        </div>
+        <div class="row time-block" id="16">
+            <div class="col-1 hour">4 PM</div>
+            <input type="text" id="eventDetails-16" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button" ></button>
+           
+        </div>
+        <div class="row time-block" id="17">
+            <div class="col-1 hour">5 PM</div>
+            <input type="text" id="eventDetails-17" class="col-10 event">
+            <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button" ></button>
+           
+        </div>
+    </div>
+
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

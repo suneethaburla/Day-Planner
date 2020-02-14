@@ -30,11 +30,14 @@
     font-size: 3em;
   }
 
-  .custom {
-      width: 70px;
+  .future {
+    background-color: lightgreen;
   }
-.timeblock {
-    height:60px;
-}
+  .past {
+    background-color: gray;
+  }
+  .present {
+    background-color: red;
+  }
   
   
