@@ -14,7 +14,7 @@ function setPlanner() {
   $.each(Object.entries(localStorage), function (x) {
     time = Object.entries(localStorage)[x][0];
     eventInfo = Object.entries(localStorage)[x][1];
-    let eventDetails = $(`#eventDetails-${JSON.parse(time)}`);
+    let eventDetails = $(`#eventDetails-${ JSON.parse(time) }`);
     if (eventInfo !== null) {
       eventDetails.val(JSON.parse(eventInfo));
     }
